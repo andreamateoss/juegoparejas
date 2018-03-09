@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="texto"><p>Encuentra las parejas</p></div>
+    </div>
+    <!-- Cuenta atras -->
+    <div class="centrado">
+        <button class="boton" id="star" onclick="reloj(); this.disabled = true;">Start</button>
+        <p class="numeros" id="reloj"></p>
+        <p class="over" id="game-over"></p>
+    </div>
+
+    <div id="game"></div>
+    <img src="./img/logo.png" class="logo" id="ganador">
+
+<!-- Música -->
+<audio id="song" src="./audio/song.mp3"></audio>
+<audio id="fail" src="./audio/fail.mp3"></audio>
+<audio id="winner" src="./audio/winner.mp3"></audio>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
